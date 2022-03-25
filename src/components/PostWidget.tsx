@@ -25,12 +25,10 @@ function PostWidget({ categories, slug }: any) {
       </h3>
       {relatedPosts.map((post: any) => (
         <div key={post.title} className='flex items-center mb-4 w-full'>
-          <div className='flex-none rounded-full w-16'>
+          <div className='bg-black flex-none rounded-full w-16'>
             <img
               src={post.featuredImage.url}
-              height='60px'
-              width='60px'
-              className='align-middle object-fill rounded-full'
+              className='h-16 mx-auto object-fill rounded-full w-24'
             />
           </div>
           <div className='flex-grow ml-4'>

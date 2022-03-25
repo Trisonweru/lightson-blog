@@ -3,6 +3,8 @@ import { getPosts } from 'services/Index';
 
 import { Categories, PostCard, PostWidget } from '@/components';
 import Seo from '@/components/Seo';
+
+import { FeaturedPosts } from '../../sections/index';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -19,7 +21,7 @@ export default function HomePage({ posts }: any) {
   return (
     <div className='container mb-8 mx-auto px-10'>
       <Seo templateTitle='LightsOn' />
-
+      <FeaturedPosts />
       <div className='gap-12 grid grid-cols-1 lg:grid-cols-12'>
         <div className='col-span-1 lg:col-span-8'>
           {posts.map((post: any, index: any) => (

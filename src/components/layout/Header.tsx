@@ -22,7 +22,7 @@ export default function Header() {
         </div>
         <div className='hidden md:contents md:float-left'>
           {categories.map((cat: any) => (
-            <Link key={cat.slug} href={`category/${cat.slug}`}>
+            <Link key={cat.slug} href={`/category/${cat.slug}`}>
               <span className='align-middle cursor-pointer duration-700 font-semibold ml-4 mt-2 text-white transition md:float-right hover:text-gray-400'>
                 {cat.name}
               </span>
